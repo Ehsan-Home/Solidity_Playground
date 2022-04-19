@@ -7,15 +7,67 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getName",
+				"name": "myBool",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "bool",
 						"name": "",
-						"type": "string"
+						"type": "bool"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myInt",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myInt8",
+				"outputs": [
+					{
+						"internalType": "int8",
+						"name": "",
+						"type": "int8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myUint",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myUint8",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -60,10 +112,10 @@
 	},
 	"sources": {
 		"contracts/Mycontract.sol": {
-			"keccak256": "0xdcd08da7344ba5657e35ad545fee8484c23bcd6743eb1382b8ecffc52b2acd65",
+			"keccak256": "0xfd4987a3e63e63e06a0c6e3784774771d660d10cdb132647adfe12a28a492283",
 			"urls": [
-				"bzz-raw://34cf4e1dd07fc77c00fe0c36b4d306b97e2b708cf5307853286c56cc5a64ab34",
-				"dweb:/ipfs/QmTk4huenDe5ye3hmsxfXZPjs3xqjZiGKhFHs2m9Jm3hw2"
+				"bzz-raw://59a899a314afa3e666b729b083150293fe67d3f5bf115095abe7a8208cbb0430",
+				"dweb:/ipfs/QmXpZfNjDPe7Qdb1Fvi8KQsao2szuiCyaMVLB9hNMnnu2H"
 			]
 		}
 	},
