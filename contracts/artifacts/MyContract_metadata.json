@@ -7,7 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "myBool",
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "isReady",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -20,49 +25,17 @@
 			},
 			{
 				"inputs": [],
-				"name": "myInt",
-				"outputs": [
-					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
-					}
-				],
-				"stateMutability": "view",
+				"name": "setReady",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "myInt8",
+				"name": "state",
 				"outputs": [
 					{
-						"internalType": "int8",
-						"name": "",
-						"type": "int8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myUint",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myUint8",
-				"outputs": [
-					{
-						"internalType": "uint8",
+						"internalType": "enum MyContract.State",
 						"name": "",
 						"type": "uint8"
 					}
@@ -72,15 +45,9 @@
 			},
 			{
 				"inputs": [],
-				"name": "name",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
+				"name": "updateState",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -112,10 +79,10 @@
 	},
 	"sources": {
 		"contracts/Mycontract.sol": {
-			"keccak256": "0xfd4987a3e63e63e06a0c6e3784774771d660d10cdb132647adfe12a28a492283",
+			"keccak256": "0x62730914957debdb8bf048d112b01d8481933af84ff98bd5a3bf67dbd8c9589c",
 			"urls": [
-				"bzz-raw://59a899a314afa3e666b729b083150293fe67d3f5bf115095abe7a8208cbb0430",
-				"dweb:/ipfs/QmXpZfNjDPe7Qdb1Fvi8KQsao2szuiCyaMVLB9hNMnnu2H"
+				"bzz-raw://2552c3626161c386f5992d1e7232c67a587022b70244454d37301c0275ea6c88",
+				"dweb:/ipfs/QmV2AKHekgYfdh9cbJt7E4bQP9B3ZNpxiuhCkviCZ6QU39"
 			]
 		}
 	},

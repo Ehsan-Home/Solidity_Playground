@@ -1,11 +1,26 @@
 pragma solidity ^0.8.13;
 
 contract MyContract {
-    string public name = "Ehsan";
-    bool public myBool = true;
-    int public myInt = 1;
-    int8 public myInt8 = 127;
-    uint public myUint = 4;
-    uint8 public myUint8 = 255;
+    enum State {Waiting , InProgress, Ready}
+    State public state;
+
+    constructor() {
+        state = State.Waiting;
+    }
+
+    function updateState() public {
+        state = State.InProgress;
+    }
+
+    function setReady() public {
+        state = State.Ready;
+    }
+
+    function isReady() public view returns(bool) {
+        if (state == State.Ready) {
+            return true;
+        }
+        return false;
+    }
 
 }
