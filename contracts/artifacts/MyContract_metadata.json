@@ -6,18 +6,42 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_price",
+						"type": "uint16"
+					}
+				],
+				"name": "addCar",
+				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "isReady",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "cars",
 				"outputs": [
 					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "price",
+						"type": "uint16"
 					}
 				],
 				"stateMutability": "view",
@@ -25,19 +49,24 @@
 			},
 			{
 				"inputs": [],
-				"name": "setReady",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "state",
+				"name": "getFirstCar",
 				"outputs": [
 					{
-						"internalType": "enum MyContract.State",
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint16",
+								"name": "price",
+								"type": "uint16"
+							}
+						],
+						"internalType": "struct MyContract.Car",
 						"name": "",
-						"type": "uint8"
+						"type": "tuple"
 					}
 				],
 				"stateMutability": "view",
@@ -45,9 +74,20 @@
 			},
 			{
 				"inputs": [],
-				"name": "updateState",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "myCar",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "price",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -79,10 +119,10 @@
 	},
 	"sources": {
 		"contracts/Mycontract.sol": {
-			"keccak256": "0x62730914957debdb8bf048d112b01d8481933af84ff98bd5a3bf67dbd8c9589c",
+			"keccak256": "0xd43082e897a89787730a7037e011068cf20fed52a12eed080b1cd88cfce8b41f",
 			"urls": [
-				"bzz-raw://2552c3626161c386f5992d1e7232c67a587022b70244454d37301c0275ea6c88",
-				"dweb:/ipfs/QmV2AKHekgYfdh9cbJt7E4bQP9B3ZNpxiuhCkviCZ6QU39"
+				"bzz-raw://ff6e594ea4f83e441354bc216805298f42b276ef3b8912ba17881c870eb9ee9a",
+				"dweb:/ipfs/QmVoKcUmadVtsKn9byg4f2E2thfkLesu2FxpbXriB25C8t"
 			]
 		}
 	},

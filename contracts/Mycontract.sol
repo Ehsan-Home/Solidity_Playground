@@ -1,26 +1,22 @@
 pragma solidity ^0.8.13;
 
 contract MyContract {
-    enum State {Waiting , InProgress, Ready}
-    State public state;
-
-    constructor() {
-        state = State.Waiting;
+    struct Car {
+        string name;
+        uint16 price;
     }
 
-    function updateState() public {
-        state = State.InProgress;
+    Car[] public cars;
+
+    Car public myCar = Car("Opel", 1200);
+
+
+    function addCar(string memory _name, uint16 _price) public {
+        cars.push(Car(_name , _price));
     }
 
-    function setReady() public {
-        state = State.Ready;
-    }
-
-    function isReady() public view returns(bool) {
-        if (state == State.Ready) {
-            return true;
-        }
-        return false;
+    function getFirstCar() public view returns(Car memory){
+        return cars[0];
     }
 
 }
