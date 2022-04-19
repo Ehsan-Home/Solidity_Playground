@@ -1,17 +1,11 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.8.13;
 
 contract MyContract {
-    string name;
+    string public constant name = "Ehsan";
 
-    constructor() public {
-        name = "Ehsan";
-    }
 
-    function getName() public view returns(string) {
+    function getName() public pure returns(string memory) {
         return name;
     }
 
-    function setName(string inputName) public {
-        name = inputName;
-    }
 }

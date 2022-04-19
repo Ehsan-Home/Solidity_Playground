@@ -1,58 +1,57 @@
 {
 	"compiler": {
-		"version": "0.4.24+commit.e67f0147"
+		"version": "0.8.13+commit.abaa5c0e"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"constant": true,
 				"inputs": [],
 				"name": "getName",
 				"outputs": [
 					{
+						"internalType": "string",
 						"name": "",
 						"type": "string"
 					}
 				],
-				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": false,
-				"inputs": [
-					{
-						"name": "inputName",
-						"type": "string"
-					}
-				],
-				"name": "setName",
-				"outputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
-			"methods": {}
+			"kind": "dev",
+			"methods": {},
+			"version": 1
 		},
 		"userdoc": {
-			"methods": {}
+			"kind": "user",
+			"methods": {},
+			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
 			"contracts/Mycontract.sol": "MyContract"
 		},
-		"evmVersion": "byzantium",
+		"evmVersion": "london",
 		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
 		"optimizer": {
 			"enabled": false,
 			"runs": 200
@@ -61,9 +60,10 @@
 	},
 	"sources": {
 		"contracts/Mycontract.sol": {
-			"keccak256": "0xd1c8e4a7fb41adc49e41e0f3d0ce0ee8627d0c66b983dbc7681ed4bab11f7c2e",
+			"keccak256": "0xdcd08da7344ba5657e35ad545fee8484c23bcd6743eb1382b8ecffc52b2acd65",
 			"urls": [
-				"bzzr://031116d96a80515bacd4fcde0d8762e5726eea05b12ecb3f93cee6543901fe5b"
+				"bzz-raw://34cf4e1dd07fc77c00fe0c36b4d306b97e2b708cf5307853286c56cc5a64ab34",
+				"dweb:/ipfs/QmTk4huenDe5ye3hmsxfXZPjs3xqjZiGKhFHs2m9Jm3hw2"
 			]
 		}
 	},
