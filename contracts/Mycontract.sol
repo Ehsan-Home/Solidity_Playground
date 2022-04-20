@@ -1,36 +1,18 @@
 pragma solidity ^0.8.13;
 
 contract MyContract {
-    struct Car {
-        string name;
-        uint128 price;
+    mapping (address => uint) balances;
+    address payable public wallet;
+
+    constructor(address payable _wallet) {
+        wallet = _wallet;
     }
 
-    uint numberOfCars = 0;
-    mapping (uint => Car) public cars;
-    address owner;
-    uint openingTime;
-
-    modifier onlyOwner() {
-        require(owner == msg.sender , "Only owner can call this function");_;
-    }
-
-    modifier onlyWhileOpen {
-        require(openingTime + 10 > block.timestamp, "time has passed");_;
-    }
-
-    constructor() {
-        owner = msg.sender;
-        openingTime = block.timestamp;
-    }
-
-    function addCar(string memory _name , uint128 _price) public onlyOwner onlyWhileOpen {
-        cars[numberOfCars] = Car(_name , _price);
-        incrementNumberOfCars();
-    }
-
-    function incrementNumberOfCars() internal {
-        numberOfCars += 1;
+    function buyToken() public payable {
+        // balances[msg.sender] += 1;
+        // msg.sender => wallet (msg.value amount)
+        // wallet.transfer = wallet.deposit
+        wallet.transfer(msg.value);
     }
 
 }

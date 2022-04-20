@@ -6,47 +6,31 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_wallet",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint128",
-						"name": "_price",
-						"type": "uint128"
-					}
-				],
-				"name": "addCar",
+				"inputs": [],
+				"name": "buyToken",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "cars",
+				"inputs": [],
+				"name": "wallet",
 				"outputs": [
 					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint128",
-						"name": "price",
-						"type": "uint128"
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -81,10 +65,10 @@
 	},
 	"sources": {
 		"contracts/Mycontract.sol": {
-			"keccak256": "0x8ec8620f0cbcb6a46aa757ed5683718f9f592f4c14d8a6e789e259a1bf94beff",
+			"keccak256": "0x2982dc85e93abd473eb070c4d2af65d00f21b15076a751ae43aa9a61e2433673",
 			"urls": [
-				"bzz-raw://0b90e7651e10d2f68f2dcb326418e737718c6e090fc32bf504ab944cb78d6018",
-				"dweb:/ipfs/QmaSPN8richibm9it3R8iMz6aHBn2L3fhxXFLrhBcg5y7Z"
+				"bzz-raw://3476209860051db05a452641dfb90f003d61b90d5a937f55fe4c990f6a647fb3",
+				"dweb:/ipfs/QmSvsLWiDupDnXT9wgR6gywkt8fwmMVtDxEm7WhDBcGcCo"
 			]
 		}
 	},
