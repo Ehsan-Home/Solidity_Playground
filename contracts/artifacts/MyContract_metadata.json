@@ -81,10 +81,10 @@
 	},
 	"sources": {
 		"contracts/Mycontract.sol": {
-			"keccak256": "0x293644d9e7d98e03ac0e90fd19562950948b1d0747ba915b7fc6e12840aa34a2",
+			"keccak256": "0x8ec8620f0cbcb6a46aa757ed5683718f9f592f4c14d8a6e789e259a1bf94beff",
 			"urls": [
-				"bzz-raw://4bc27d5b8ff64ed12d37fb3c848a2f5868250306d1ce3dadb3c5a354fcd67b0b",
-				"dweb:/ipfs/QmbJ7PewvEfkzLFEzKhHWVFATJzebvixZh9xpfMC1wgA7P"
+				"bzz-raw://0b90e7651e10d2f68f2dcb326418e737718c6e090fc32bf504ab944cb78d6018",
+				"dweb:/ipfs/QmaSPN8richibm9it3R8iMz6aHBn2L3fhxXFLrhBcg5y7Z"
 			]
 		}
 	},

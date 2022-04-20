@@ -9,16 +9,22 @@ contract MyContract {
     uint numberOfCars = 0;
     mapping (uint => Car) public cars;
     address owner;
+    uint openingTime;
 
     modifier onlyOwner() {
         require(owner == msg.sender , "Only owner can call this function");_;
     }
 
-    constructor() {
-        owner = msg.sender;
+    modifier onlyWhileOpen {
+        require(openingTime + 10 > block.timestamp, "time has passed");_;
     }
 
-    function addCar(string memory _name , uint128 _price) public onlyOwner {
+    constructor() {
+        owner = msg.sender;
+        openingTime = block.timestamp;
+    }
+
+    function addCar(string memory _name , uint128 _price) public onlyOwner onlyWhileOpen {
         cars[numberOfCars] = Car(_name , _price);
         incrementNumberOfCars();
     }
