@@ -17,6 +17,10 @@
 				"type": "constructor"
 			},
 			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
 				"inputs": [],
 				"name": "buyToken",
 				"outputs": [],
@@ -65,10 +69,10 @@
 	},
 	"sources": {
 		"contracts/Mycontract.sol": {
-			"keccak256": "0x2982dc85e93abd473eb070c4d2af65d00f21b15076a751ae43aa9a61e2433673",
+			"keccak256": "0xdd0b1ae69b7d35f92c4c15c24361209d3fcd5cd3ef4243e497f083e7814a5e78",
 			"urls": [
-				"bzz-raw://3476209860051db05a452641dfb90f003d61b90d5a937f55fe4c990f6a647fb3",
-				"dweb:/ipfs/QmSvsLWiDupDnXT9wgR6gywkt8fwmMVtDxEm7WhDBcGcCo"
+				"bzz-raw://1ec549bf8b6eb105cdff87ce9ef312cebb83bb7e7d806b27570d60f4dc8d6611",
+				"dweb:/ipfs/QmeaasMtATtRdE9raeZxx7j3SkjeedwMUHcU3x19Fp8exW"
 			]
 		}
 	},
