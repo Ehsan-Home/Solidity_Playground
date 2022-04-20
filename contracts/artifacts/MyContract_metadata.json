@@ -6,6 +6,11 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -13,9 +18,9 @@
 						"type": "string"
 					},
 					{
-						"internalType": "uint16",
+						"internalType": "uint128",
 						"name": "_price",
-						"type": "uint16"
+						"type": "uint128"
 					}
 				],
 				"name": "addCar",
@@ -39,52 +44,9 @@
 						"type": "string"
 					},
 					{
-						"internalType": "uint16",
+						"internalType": "uint128",
 						"name": "price",
-						"type": "uint16"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getFirstCar",
-				"outputs": [
-					{
-						"components": [
-							{
-								"internalType": "string",
-								"name": "name",
-								"type": "string"
-							},
-							{
-								"internalType": "uint16",
-								"name": "price",
-								"type": "uint16"
-							}
-						],
-						"internalType": "struct MyContract.Car",
-						"name": "",
-						"type": "tuple"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myCar",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint16",
-						"name": "price",
-						"type": "uint16"
+						"type": "uint128"
 					}
 				],
 				"stateMutability": "view",
@@ -119,10 +81,10 @@
 	},
 	"sources": {
 		"contracts/Mycontract.sol": {
-			"keccak256": "0xd43082e897a89787730a7037e011068cf20fed52a12eed080b1cd88cfce8b41f",
+			"keccak256": "0x293644d9e7d98e03ac0e90fd19562950948b1d0747ba915b7fc6e12840aa34a2",
 			"urls": [
-				"bzz-raw://ff6e594ea4f83e441354bc216805298f42b276ef3b8912ba17881c870eb9ee9a",
-				"dweb:/ipfs/QmVoKcUmadVtsKn9byg4f2E2thfkLesu2FxpbXriB25C8t"
+				"bzz-raw://4bc27d5b8ff64ed12d37fb3c848a2f5868250306d1ce3dadb3c5a354fcd67b0b",
+				"dweb:/ipfs/QmbJ7PewvEfkzLFEzKhHWVFATJzebvixZh9xpfMC1wgA7P"
 			]
 		}
 	},
