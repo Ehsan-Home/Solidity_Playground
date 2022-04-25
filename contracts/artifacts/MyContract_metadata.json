@@ -29,6 +29,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "saySomething",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "wallet",
 				"outputs": [
 					{
@@ -69,10 +82,10 @@
 	},
 	"sources": {
 		"contracts/Mycontract.sol": {
-			"keccak256": "0xdd0b1ae69b7d35f92c4c15c24361209d3fcd5cd3ef4243e497f083e7814a5e78",
+			"keccak256": "0x774ac02074ac8ec93df969d3fdbdf794c484520b9b71b4520d758996baf5dbe0",
 			"urls": [
-				"bzz-raw://1ec549bf8b6eb105cdff87ce9ef312cebb83bb7e7d806b27570d60f4dc8d6611",
-				"dweb:/ipfs/QmeaasMtATtRdE9raeZxx7j3SkjeedwMUHcU3x19Fp8exW"
+				"bzz-raw://9033b52a49bdcc31fab084941fd7ebe9792b49f28b07a43b8230074563d126db",
+				"dweb:/ipfs/QmUmDvdc7CUVUboaRDewtomUYng23gwGhmjXjJCfdMF4uZ"
 			]
 		}
 	},

@@ -8,8 +8,13 @@ contract MyContract {
         wallet = _wallet;
     }
 
+    // external : unlike public, external only can be used outside of the contract,  
     fallback() external payable {
         buyToken();
+    }
+
+    function saySomething() public returns(string memory) {
+        return "I said STH!";
     }
 
     function buyToken() public payable {
