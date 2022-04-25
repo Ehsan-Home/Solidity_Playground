@@ -1,4 +1,4 @@
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.7;
 
 contract MyContract {
     mapping (address => uint) balances;
